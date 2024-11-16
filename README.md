@@ -11,7 +11,7 @@ Platform online untuk menyewa PlayStation. Dan juga menjual kaset ps 4 dan 5.
 | 202243500502 | [Sangga Buana](https://github.com/sanggabuana453)           |
 | 202243500505 | [Taufik Ramadhan](https://github.com/Alfarobby27)           |  
 | 202243579068 | [Agus Setiawan](https://github.com/Alfarobby27)             |
-| 202243500498 | [Khoirizidan NUr Bisri](https://github.com/Alfarobby27)     |
+| 202243500498 | [Khoirizidan Nur Bisri](https://github.com/Alfarobby27)     |
 
 ## **Fitur Menu:**
 - Home: Halaman utama website sebagai informasi utama seperti tentang website, keunggulan, testimonial customer, dan sponsors. 
