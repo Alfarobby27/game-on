@@ -1,7 +1,7 @@
 # **Judul: Game ON! - Website Rental PlayStation**
 
-```bash
-Platform online untuk menyewa PlayStation. Dan juga menjual kaset ps dan accessories ps lainnya.
+```
+Platform online untuk menyewa PlayStation. Dan juga menjual kaset ps 4 dan 5.
 ```
 
 ## **Anggota Kelompok 1**
@@ -39,6 +39,12 @@ Platform online untuk menyewa PlayStation. Dan juga menjual kaset ps dan accesso
 - Icon: - Font Awesome
         - Lottie Files
 
-
-
 - Jenis Font: Arial, Helvetica, sans-serif
+
+## **Struktur Folder**
+
+## **Demo Website**
+
+```bash
+https://alfarobby27.github.io/game-on/
+```
