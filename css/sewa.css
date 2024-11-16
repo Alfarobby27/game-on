@@ -1,0 +1,216 @@
+/* Content Section */
+.content {
+  padding: 5rem 7%;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.content:hover {
+  transform: scale(1.02);
+}
+
+.sewa-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.sewa-header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Form Styling */
+.sewa-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 3rem 3.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  margin: 3rem auto;
+  transition: all 0.3s ease;
+}
+
+.sewa-form:hover {
+  transform: scale(1.02);
+}
+
+.sewa-form .form-group {
+  margin-bottom: 20px;
+}
+
+.sewa-form label {
+  display: block;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 8px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.sewa-form select,
+.sewa-form input[type="radio"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #333;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.sewa-form select:hover,
+.sewa-form select:focus,
+.sewa-form input[type="radio"]:checked {
+  border-color: #2575fc;
+  background-color: #444;
+}
+
+/* Styling untuk dropdown bank */
+#bank-dropdown {
+  margin-top: 15px;
+}
+
+#bank-dropdown label {
+  font-weight: bold;
+}
+
+#bank-select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Styling Upload KTP dan Selfie (Hanya muncul jika Bawa Pulang) */
+#upload-section {
+  margin-top: 30px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#upload-section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#upload-section .form-group {
+  margin-bottom: 20px;
+}
+
+#ktp-upload,
+#selfie-upload {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #444;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#ktp-upload:hover,
+#selfie-upload:hover {
+  border-color: #2575fc;
+  background-color: #555;
+}
+
+/* Total Cost and Admin Fee */
+.sewa-form .total-cost {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #ff8c00;
+}
+
+.sewa-form .admin-fee {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #ff5c5c;
+}
+
+/* Styling Upload KTP dan Selfie (Hanya muncul jika Bawa Pulang) */
+#upload-section {
+  margin-top: 30px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+#upload-section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#upload-section .form-group {
+  margin-bottom: 20px;
+}
+
+#ktp-upload,
+#selfie-upload {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #444;
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer; /* Adding pointer cursor for better UX */
+}
+
+#ktp-upload:hover,
+#selfie-upload:hover {
+  border-color: #2575fc;
+  background-color: #555;
+}
+
+#ktp-upload:focus,
+#selfie-upload:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.6); /* Adding a focus effect for better accessibility */
+}
+
+.sewa-button {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 16px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+
+.sewa-button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sewa-button:active {
+  transform: translateY(2px);
+}

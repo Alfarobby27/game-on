@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  min-height: 100vh;
+}
+/* Scroll Animations */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  /* Home Section */
+  .navmenu {
+    display: none;
+    position: fixed;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.9);
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    z-index: 2;
+  }
+
+  .navmenu.active {
+    display: flex;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .navlogo img {
+    width: 60px;
+  }
+
+  .navlogo .textlogo {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .banner-content {
+    font-size: 1.6rem;
+  }
+
+  .btn {
+    padding: 0.8rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  .about h3 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 1.2rem;
+  }
+
+  .about-item i {
+    font-size: 2rem;
+  }
+
+  .testimonial-item {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .testimonial-slider {
+    gap: 15px;
+  }
+
+  .sponsors {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sponsor-logos {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .sponsors h3 {
+    font-size: 2rem;
+  }
+
+  .lottie {
+    display: none;
+  }
+
+  /* Games Section */
+
+  .ps5-img img,
+  .ps4-img img,
+  .triangle,
+  .triangle-1,
+  .triangle-2 {
+    display: none !important;
+  }
+
+  .games-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 2rem;
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    gap: 1.5rem;
+  }
+
+  .banner-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-card img {
+    max-width: 200px;
+  }
+
+  .product-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .ps5-content p,
+  .ps4-content p {
+    font-size: 1rem;
+  }
+
+  /* Sewa Section */
+
+  .sewa-form {
+    padding: 20px;
+  }
+
+  .sewa-header h2 {
+    font-size: 28px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group select {
+    font-size: 14px;
+  }
+
+  .sewa-button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .sewa-form {
+    width: 90%;
+    padding: 2.5rem 3rem;
+  }
+
+  .sewa-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .sewa-button {
+    font-size: 1.2rem;
+    padding: 14px;
+  }
+
+  #upload-section {
+    padding: 1.5rem;
+  }
+
+  /* Contact Section */
+
+  .contact-title {
+    font-size: 2.3rem;
+  }
+
+  .contact-description {
+    font-size: 1rem;
+  }
+
+  .contact-form {
+    padding: 25px;
+    width: 90%;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+
+  .maps iframe {
+    height: 300px;
+  }
+
+  footer {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .address a {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  footer .address h3 {
+    text-align: center;
+  }
+
+  footer .address a i {
+    margin-right: 10px;
+  }
+
+  footer .socials,
+  footer .links {
+    display: none;
+  }
+
+  footer .address {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .navlogo img {
+    width: 50px;
+  }
+
+  .navlogo .textlogo {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+
+  .banner-content {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    padding: 0.7rem 2rem;
+    font-size: 0.9rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+  }
+
+  .testimonial-item {
+    padding: 20px;
+  }
+
+  .sponsor-logos {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .content {
+    padding: 4rem 4%;
+  }
+
+  .sewa-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .sewa-form {
+    width: 90%;
+    padding: 2rem 2.5rem;
+  }
+
+  .sewa-button {
+    font-size: 1.2rem;
+    padding: 14px;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+
+  #upload-section {
+    padding: 1rem;
+  }
+}

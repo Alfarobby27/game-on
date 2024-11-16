@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gameon.co.id/sewa</title>
+    <!-- Icon Tab -->
+    <link rel="shortcut icon" href="../img/asset/logo.png" />
+    <!-- Font Awesome Icon -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Lottie Files Icon -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
+    <!-- Navbar Style -->
+    <link rel="stylesheet" href="../css/default/navbar.css" />
+    <!-- Sewa Style -->
+    <link rel="stylesheet" href="../css/sewa.css" />
+    <!-- Footer Style -->
+    <link rel="stylesheet" href="../css/default/footer.css" />
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="../css/default/responsive.css" />
+  </head>
+  <body>
+    <!-- Navbar Begin -->
+    <nav class="navbar">
+      <!-- Logo Game ON! -->
+      <a href="#" class="navlogo">
+        <img src="../img/asset/logo.png" alt="Logo Game ON!" />
+        <div class="textlogo">
+          ame
+          <span>ON!</span>
+        </div>
+      </a>
+
+      <!-- Menu -->
+      <div class="navmenu">
+        <a href="../index.html">Home</a>
+        <a href="./games.html">Games</a>
+        <a href="#" class="active">Sewa</a><a href="./contact.html">Contact</a>
+      </div>
+
+      <div class="menu" id="menu">
+        <div>
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Content Begin -->
+    <section class="content">
+      <!-- Form Sewa Begin -->
+      <div class="sewa-form">
+        <div class="form-group">
+          <label for="sewa">Jenis Sewa:</label>
+          <select id="sewa" name="sewa">
+            <option value="ditempat">Main ditempat</option>
+            <option value="dibawa">Bawa pulang</option>
+          </select>
+        </div>
+
+        <!-- Input untuk KTP dan Foto Selfie (tersembunyi jika tidak dipilih Bawa Pulang) -->
+        <div id="upload-section" style="display: none">
+          <h3>Jaminan untuk Bawa Pulang</h3>
+
+          <!-- Input KTP -->
+          <div class="form-group">
+            <label for="ktp-upload">Upload KTP (JPG/PNG): </label>
+            <input
+              type="file"
+              id="ktp-upload"
+              accept=".jpg,.png,.jpeg"
+            /><br /><br />
+          </div>
+
+          <!-- Input Selfie -->
+          <div class="form-group">
+            <label for="selfie-upload">Upload Foto Selfie + KTP: </label>
+            <input
+              type="file"
+              id="selfie-upload"
+              accept=".jpg,.png,.jpeg"
+            /><br /><br />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="paket">Paket Sewa:</label>
+          <select id="paket" name="paket">
+            <option value="reguler">Reguler</option>
+            <option value="malam">Malam</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="device">Pilih Perangkat:</label>
+          <select id="device" name="device">
+            <option value="ps5">PlayStation 5</option>
+            <option value="ps4">PlayStation 4</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="duration">Durasi Sewa:</label>
+          <select id="duration" name="duration">
+            <option value="perjam">Per Jam</option>
+            <option value="perhari">Per Hari</option>
+          </select>
+        </div>
+
+        <!-- Pilihan Durasi yang lebih spesifik -->
+        <div class="form-group">
+          <label for="specific-duration">Pilih Durasi:</label>
+          <select id="specific-duration" name="specific-duration">
+            <option value="1jam">1 Jam</option>
+            <option value="5jam">5 Jam</option>
+            <option value="10jam">10 Jam</option>
+            <option value="1hari">1 Hari</option>
+            <option value="2hari">2 Hari</option>
+            <option value="3hari">3 Hari</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="payment-method">Pilih Metode Pembayaran:</label>
+          <select id="payment-method" name="payment-method">
+            <option value="">Pilih Metode Pembayaran</option>
+            <option value="cash">Cash</option>
+            <option value="qris">QRIS</option>
+            <option value="bank-transfer">Bank Transfer</option>
+          </select>
+        </div>
+
+        <!-- Dropdown Bank (akan muncul jika Bank Transfer dipilih) -->
+        <div id="bank-dropdown" class="form-group" style="display: none">
+          <label for="bank-select">Pilih Bank:</label>
+          <select id="bank-select" name="bank-select">
+            <option value="">Pilih Bank</option>
+            <option value="bca">Bank BCA</option>
+            <option value="bri">Bank BRI</option>
+            <option value="mandiri">Bank Mandiri</option>
+            <option value="bni">Bank BNI</option>
+            <option value="other">Bank Lain</option>
+          </select>
+        </div>
+
+        <!-- Total Bayar Display -->
+        <div class="total-cost">
+          <p>Biaya Sewa: <span id="total-cost">Rp 0</span></p>
+        </div>
+
+        <!-- Biaya Admin Bank (akan muncul jika Bank Transfer dipilih) -->
+        <div id="admin-fee" class="total-cost" style="display: none">
+          <p>Biaya Admin Bank: <span id="admin-fee-amount">Rp 0</span></p>
+        </div>
+
+        <button class="sewa-button" id="pesan-button">Pesan</button>
+      </div>
+      <!-- Form Sewa End -->
+    </section>
+    <!-- Content End -->
+
+    <!-- Footer Begin -->
+    <footer class="footer hidden">
+      <div class="address">
+        <h3>Hubungi Kami</h3>
+        <a href="#">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>
+            Jl. Raya Condet No.30A, RT.11/RW.3, Batu Ampar, Kec. Kramat jati,
+            Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13520
+          </p>
+        </a>
+        <a href="#">
+          <i class="fas fa-phone-alt"></i>
+          <p>(021) 628328492, (+62) 89573821107</p>
+        </a>
+        <a href="#">
+          <i class="fas fa-envelope"></i>
+          <p>gameon62@gmail.com</p>
+        </a>
+        <div class="credit">
+          <p>&copy; Copyright 2024. Game ON!</p>
+        </div>
+      </div>
+
+      <div class="links">
+        <h3>Menu</h3>
+        <a href="../index.html">Home</a>
+        <a href="./sewa.html">Games</a>
+        <a href="#">Sewa</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+
+      <div class="socials">
+        <h3>Share Game On!</h3>
+        <a href="#">
+          <i class="fab fa-discord"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+
+        <div class="subscribe-container">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            id="email-input"
+            class="email-input"
+          />
+          <button type="submit" class="subscribe-btn">Subscribe!</button>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script JS -->
+    <script src="../js/sewa.js"></script>
+  </body>
+</html>

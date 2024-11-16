@@ -1,0 +1,1750 @@
+/* General Content Styling */
+.content {
+  min-height: 100vh;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+.view {
+  display: none;
+  animation: fadeIn 1s ease-out;
+}
+
+.games-menu {
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+}
+
+.games-menu button {
+  background-color: #ffcc00;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+}
+.games-menu button:hover {
+  transform: scale(1.1);
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  border: none;
+  z-index: 1;
+}
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+  z-index: 2;
+}
+
+.ps5-content,
+.ps4-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 50%;
+  margin: 5rem 7%;
+  z-index: 7;
+}
+
+.ps5-content img,
+.ps4-content img {
+  width: 300px;
+  height: auto;
+}
+
+.ps5-content p,
+.ps4-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  white-space: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), -2px -2px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 5rem;
+}
+
+.ps5-btn a,
+.ps4-btn a {
+  background-color: #00d4ff;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.ps5-btn span,
+.ps4-btn span {
+  margin-left: 0.5rem;
+}
+
+.ps5-btn a:hover,
+.ps4-btn a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.ps5-btn a:focus,
+.ps4-btn a:focus {
+  outline: none;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 14rem;
+  background: linear-gradient(to top left, #00d4ff 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 4;
+}
+
+.triangle-1 {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  width: 60rem;
+  height: 16rem;
+  background: linear-gradient(to top left, #ff0040 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.triangle-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60rem;
+  height: 15rem;
+  z-index: 5;
+}
+
+.ps5-img img,
+.ps4-img img {
+  position: absolute;
+  display: flex;
+  height: auto;
+  bottom: 2rem;
+  right: 2rem;
+  height: 35rem;
+  width: 30rem;
+  z-index: 6;
+}
+
+.ps5-theme {
+  background: linear-gradient(135deg, #000428, #004e92);
+}
+
+.ps5-triangle {
+  background: linear-gradient(to top left, #01437c 50%, transparent 50%);
+}
+
+.ps4-theme {
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+}
+
+.ps4-triangle {
+  background: linear-gradient(to top left, #463694 50%, transparent 50%);
+}
+
+.ps3-theme {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.ps3-triangle {
+  border-bottom: 50px solid #feb47b;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 5rem 4rem;
+}
+
+.product-card {
+  background-color: #222;
+  padding: 1rem 10%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.product-card h3 {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.product-card .product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-card .product-price p {
+  color: #ffcc00;
+  padding: 1rem;
+}
+
+.product-card .product-price .buy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffcc00;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.product-card .product-price .buy-button:hover {
+  background-color: #ffcc00;
+}
+.product-card .img-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  border-radius: 0.6rem;
+  background: #050505;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* General Content Styling */
+.content {
+  min-height: 100vh;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+.view {
+  display: none;
+  animation: fadeIn 1s ease-out;
+}
+
+.games-menu {
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+}
+
+.games-menu button {
+  background-color: #ffcc00;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+}
+.games-menu button:hover {
+  transform: scale(1.1);
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  border: none;
+  z-index: 1;
+}
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+  z-index: 2;
+}
+
+.ps5-content,
+.ps4-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 50%;
+  margin: 5rem 7%;
+  z-index: 7;
+}
+
+.ps5-content img,
+.ps4-content img {
+  width: 300px;
+  height: auto;
+}
+
+.ps5-content p,
+.ps4-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  white-space: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), -2px -2px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 5rem;
+}
+
+.ps5-btn a,
+.ps4-btn a {
+  background-color: #00d4ff;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.ps5-btn span,
+.ps4-btn span {
+  margin-left: 0.5rem;
+}
+
+.ps5-btn a:hover,
+.ps4-btn a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.ps5-btn a:focus,
+.ps4-btn a:focus {
+  outline: none;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 14rem;
+  background: linear-gradient(to top left, #00d4ff 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 4;
+}
+
+.triangle-1 {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  width: 60rem;
+  height: 16rem;
+  background: linear-gradient(to top left, #ff0040 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.triangle-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60rem;
+  height: 15rem;
+  z-index: 5;
+}
+
+.ps5-img img,
+.ps4-img img {
+  position: absolute;
+  display: flex;
+  height: auto;
+  bottom: 2rem;
+  right: 2rem;
+  height: 35rem;
+  width: 30rem;
+  z-index: 6;
+}
+
+.ps5-theme {
+  background: linear-gradient(135deg, #000428, #004e92);
+}
+
+.ps5-triangle {
+  background: linear-gradient(to top left, #01437c 50%, transparent 50%);
+}
+
+.ps4-theme {
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+}
+
+.ps4-triangle {
+  background: linear-gradient(to top left, #463694 50%, transparent 50%);
+}
+
+.ps3-theme {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.ps3-triangle {
+  border-bottom: 50px solid #feb47b;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 5rem 4rem;
+}
+
+.product-card {
+  background-color: #222;
+  padding: 1rem 10%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.product-card h3 {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.product-card .product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-card .product-price p {
+  color: #ffcc00;
+  padding: 1rem;
+}
+
+.product-card .product-price .buy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffcc00;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.product-card .product-price .buy-button:hover {
+  background-color: #ffcc00;
+}
+.product-card .img-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  border-radius: 0.6rem;
+  background: #050505;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* General Content Styling */
+.content {
+  min-height: 100vh;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+.view {
+  display: none;
+  animation: fadeIn 1s ease-out;
+}
+
+.games-menu {
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+}
+
+.games-menu button {
+  background-color: #ffcc00;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+}
+.games-menu button:hover {
+  transform: scale(1.1);
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  border: none;
+  z-index: 1;
+}
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+  z-index: 2;
+}
+
+.ps5-content,
+.ps4-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 50%;
+  margin: 5rem 7%;
+  z-index: 7;
+}
+
+.ps5-content img,
+.ps4-content img {
+  width: 300px;
+  height: auto;
+}
+
+.ps5-content p,
+.ps4-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  white-space: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), -2px -2px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 5rem;
+}
+
+.ps5-btn a,
+.ps4-btn a {
+  background-color: #00d4ff;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.ps5-btn span,
+.ps4-btn span {
+  margin-left: 0.5rem;
+}
+
+.ps5-btn a:hover,
+.ps4-btn a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.ps5-btn a:focus,
+.ps4-btn a:focus {
+  outline: none;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 14rem;
+  background: linear-gradient(to top left, #00d4ff 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 4;
+}
+
+.triangle-1 {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  width: 60rem;
+  height: 16rem;
+  background: linear-gradient(to top left, #ff0040 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.triangle-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60rem;
+  height: 15rem;
+  z-index: 5;
+}
+
+.ps5-img img,
+.ps4-img img {
+  position: absolute;
+  display: flex;
+  height: auto;
+  bottom: 2rem;
+  right: 2rem;
+  height: 35rem;
+  width: 30rem;
+  z-index: 6;
+}
+
+.ps5-theme {
+  background: linear-gradient(135deg, #000428, #004e92);
+}
+
+.ps5-triangle {
+  background: linear-gradient(to top left, #01437c 50%, transparent 50%);
+}
+
+.ps4-theme {
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+}
+
+.ps4-triangle {
+  background: linear-gradient(to top left, #463694 50%, transparent 50%);
+}
+
+.ps3-theme {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.ps3-triangle {
+  border-bottom: 50px solid #feb47b;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 5rem 4rem;
+}
+
+.product-card {
+  background-color: #222;
+  padding: 1rem 10%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.product-card h3 {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.product-card .product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-card .product-price p {
+  color: #ffcc00;
+  padding: 1rem;
+}
+
+.product-card .product-price .buy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffcc00;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.product-card .product-price .buy-button:hover {
+  background-color: #ffcc00;
+}
+.product-card .img-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  border-radius: 0.6rem;
+  background: #050505;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* General Content Styling */
+.content {
+  min-height: 100vh;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+.view {
+  display: none;
+  animation: fadeIn 1s ease-out;
+}
+
+.games-menu {
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+}
+
+.games-menu button {
+  background-color: #ffcc00;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+}
+.games-menu button:hover {
+  transform: scale(1.1);
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  border: none;
+  z-index: 1;
+}
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+  z-index: 2;
+}
+
+.ps5-content,
+.ps4-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 50%;
+  margin: 5rem 7%;
+  z-index: 7;
+}
+
+.ps5-content img,
+.ps4-content img {
+  width: 300px;
+  height: auto;
+}
+
+.ps5-content p,
+.ps4-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  white-space: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), -2px -2px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 5rem;
+}
+
+.ps5-btn a,
+.ps4-btn a {
+  background-color: #00d4ff;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.ps5-btn span,
+.ps4-btn span {
+  margin-left: 0.5rem;
+}
+
+.ps5-btn a:hover,
+.ps4-btn a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.ps5-btn a:focus,
+.ps4-btn a:focus {
+  outline: none;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 14rem;
+  background: linear-gradient(to top left, #00d4ff 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 4;
+}
+
+.triangle-1 {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  width: 60rem;
+  height: 16rem;
+  background: linear-gradient(to top left, #ff0040 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.triangle-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60rem;
+  height: 15rem;
+  z-index: 5;
+}
+
+.ps5-img img,
+.ps4-img img {
+  position: absolute;
+  display: flex;
+  height: auto;
+  bottom: 2rem;
+  right: 2rem;
+  height: 35rem;
+  width: 30rem;
+  z-index: 6;
+}
+
+.ps5-theme {
+  background: linear-gradient(135deg, #000428, #004e92);
+}
+
+.ps5-triangle {
+  background: linear-gradient(to top left, #01437c 50%, transparent 50%);
+}
+
+.ps4-theme {
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+}
+
+.ps4-triangle {
+  background: linear-gradient(to top left, #463694 50%, transparent 50%);
+}
+
+.ps3-theme {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.ps3-triangle {
+  border-bottom: 50px solid #feb47b;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 5rem 4rem;
+}
+
+.product-card {
+  background-color: #222;
+  padding: 1rem 10%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.product-card h3 {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.product-card .product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-card .product-price p {
+  color: #ffcc00;
+  padding: 1rem;
+}
+
+.product-card .product-price .buy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffcc00;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.product-card .product-price .buy-button:hover {
+  background-color: #ffcc00;
+}
+.product-card .img-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  border-radius: 0.6rem;
+  background: #050505;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* General Content Styling */
+.content {
+  min-height: 100vh;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+.view {
+  display: none;
+  animation: fadeIn 1s ease-out;
+}
+
+.games-menu {
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+}
+
+.games-menu button {
+  background-color: #ffcc00;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+}
+.games-menu button:hover {
+  transform: scale(1.1);
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  border: none;
+  z-index: 1;
+}
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+  z-index: 2;
+}
+
+.ps5-content,
+.ps4-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 50%;
+  margin: 5rem 7%;
+  z-index: 7;
+}
+
+.ps5-content img,
+.ps4-content img {
+  width: 300px;
+  height: auto;
+}
+
+.ps5-content p,
+.ps4-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  white-space: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), -2px -2px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 5rem;
+}
+
+.ps5-btn a,
+.ps4-btn a {
+  background-color: #00d4ff;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.ps5-btn span,
+.ps4-btn span {
+  margin-left: 0.5rem;
+}
+
+.ps5-btn a:hover,
+.ps4-btn a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.ps5-btn a:focus,
+.ps4-btn a:focus {
+  outline: none;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 14rem;
+  background: linear-gradient(to top left, #00d4ff 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 4;
+}
+
+.triangle-1 {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  width: 60rem;
+  height: 16rem;
+  background: linear-gradient(to top left, #ff0040 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.triangle-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60rem;
+  height: 15rem;
+  z-index: 5;
+}
+
+.ps5-img img,
+.ps4-img img {
+  position: absolute;
+  display: flex;
+  height: auto;
+  bottom: 2rem;
+  right: 2rem;
+  height: 35rem;
+  width: 30rem;
+  z-index: 6;
+}
+
+.ps5-theme {
+  background: linear-gradient(135deg, #000428, #004e92);
+}
+
+.ps5-triangle {
+  background: linear-gradient(to top left, #01437c 50%, transparent 50%);
+}
+
+.ps4-theme {
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+}
+
+.ps4-triangle {
+  background: linear-gradient(to top left, #463694 50%, transparent 50%);
+}
+
+.ps3-theme {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.ps3-triangle {
+  border-bottom: 50px solid #feb47b;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 5rem 4rem;
+}
+
+.product-card {
+  background-color: #222;
+  padding: 1rem 10%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.product-card h3 {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.product-card .product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-card .product-price p {
+  color: #ffcc00;
+  padding: 1rem;
+}
+
+.product-card .product-price .buy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffcc00;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.product-card .product-price .buy-button:hover {
+  background-color: #ffcc00;
+}
+.product-card .img-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  border-radius: 0.6rem;
+  background: #050505;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* General Content Styling */
+.content {
+  min-height: 100vh;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+.view {
+  display: none;
+  animation: fadeIn 1s ease-out;
+}
+
+.games-menu {
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+}
+
+.games-menu button {
+  background-color: #ffcc00;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+}
+.games-menu button:hover {
+  transform: scale(1.1);
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  border: none;
+  z-index: 1;
+}
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+  z-index: 2;
+}
+
+.ps5-content,
+.ps4-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 50%;
+  margin: 5rem 7%;
+  z-index: 7;
+}
+
+.ps5-content img,
+.ps4-content img {
+  width: 300px;
+  height: auto;
+}
+
+.ps5-content p,
+.ps4-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  white-space: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), -2px -2px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 5rem;
+}
+
+.ps5-btn a,
+.ps4-btn a {
+  background-color: #00d4ff;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.ps5-btn span,
+.ps4-btn span {
+  margin-left: 0.5rem;
+}
+
+.ps5-btn a:hover,
+.ps4-btn a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.ps5-btn a:focus,
+.ps4-btn a:focus {
+  outline: none;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 14rem;
+  background: linear-gradient(to top left, #00d4ff 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 4;
+}
+
+.triangle-1 {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  width: 60rem;
+  height: 16rem;
+  background: linear-gradient(to top left, #ff0040 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.triangle-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60rem;
+  height: 15rem;
+  z-index: 5;
+}
+
+.ps5-img img,
+.ps4-img img {
+  position: absolute;
+  display: flex;
+  height: auto;
+  bottom: 2rem;
+  right: 2rem;
+  height: 35rem;
+  width: 30rem;
+  z-index: 6;
+}
+
+.ps5-theme {
+  background: linear-gradient(135deg, #000428, #004e92);
+}
+
+.ps5-triangle {
+  background: linear-gradient(to top left, #01437c 50%, transparent 50%);
+}
+
+.ps4-theme {
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+}
+
+.ps4-triangle {
+  background: linear-gradient(to top left, #463694 50%, transparent 50%);
+}
+
+.ps3-theme {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.ps3-triangle {
+  border-bottom: 50px solid #feb47b;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 5rem 4rem;
+}
+
+.product-card {
+  background-color: #222;
+  padding: 1rem 10%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.product-card h3 {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.product-card .product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-card .product-price p {
+  color: #ffcc00;
+  padding: 1rem;
+}
+
+.product-card .product-price .buy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffcc00;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.product-card .product-price .buy-button:hover {
+  background-color: #ffcc00;
+}
+.product-card .img-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  border-radius: 0.6rem;
+  background: #050505;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* General Content Styling */
+.content {
+  min-height: 100vh;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  min-height: 100vh;
+  transition: background 0.5s ease;
+}
+
+.view {
+  display: none;
+  animation: fadeIn 1s ease-out;
+}
+
+.games-menu {
+  padding-top: 12rem;
+  padding-bottom: 5rem;
+}
+
+.games-menu button {
+  background-color: #ffcc00;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 2rem;
+  transition: transform 0.3s ease;
+}
+.games-menu button:hover {
+  transform: scale(1.1);
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+  border: none;
+  z-index: 1;
+}
+
+.banner-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4));
+  z-index: 2;
+}
+
+.ps5-content,
+.ps4-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 50%;
+  margin: 5rem 7%;
+  z-index: 7;
+}
+
+.ps5-content img,
+.ps4-content img {
+  width: 300px;
+  height: auto;
+}
+
+.ps5-content p,
+.ps4-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  white-space: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), -2px -2px 5px rgba(0, 0, 0, 0.6);
+  margin-bottom: 5rem;
+}
+
+.ps5-btn a,
+.ps4-btn a {
+  background-color: #00d4ff;
+  color: white;
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5rem;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+
+.ps5-btn span,
+.ps4-btn span {
+  margin-left: 0.5rem;
+}
+
+.ps5-btn a:hover,
+.ps4-btn a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.ps5-btn a:focus,
+.ps4-btn a:focus {
+  outline: none;
+}
+
+.triangle {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 14rem;
+  background: linear-gradient(to top left, #00d4ff 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 4;
+}
+
+.triangle-1 {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  width: 60rem;
+  height: 16rem;
+  background: linear-gradient(to top left, #ff0040 50%, transparent 50%);
+  opacity: 0.5;
+  z-index: 3;
+}
+
+.triangle-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60rem;
+  height: 15rem;
+  z-index: 5;
+}
+
+.ps5-img img,
+.ps4-img img {
+  position: absolute;
+  display: flex;
+  height: auto;
+  bottom: 2rem;
+  right: 2rem;
+  height: 35rem;
+  width: 30rem;
+  z-index: 6;
+}
+
+.ps5-theme {
+  background: linear-gradient(135deg, #000428, #004e92);
+}
+
+.ps5-triangle {
+  background: linear-gradient(to top left, #01437c 50%, transparent 50%);
+}
+
+.ps4-theme {
+  background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+}
+
+.ps4-triangle {
+  background: linear-gradient(to top left, #463694 50%, transparent 50%);
+}
+
+.ps3-theme {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.ps3-triangle {
+  border-bottom: 50px solid #feb47b;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 5rem 4rem;
+}
+
+.product-card {
+  background-color: #222;
+  padding: 1rem 10%;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.product-card h3 {
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.product-card .product-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-card .product-price p {
+  color: #ffcc00;
+  padding: 1rem;
+}
+
+.product-card .product-price .buy-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffcc00;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.product-card .product-price .buy-button:hover {
+  background-color: #ffcc00;
+}
+.product-card .img-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20rem;
+  border-radius: 0.6rem;
+  background: #050505;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

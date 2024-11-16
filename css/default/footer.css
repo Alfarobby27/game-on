@@ -1,0 +1,129 @@
+/* Footer */
+footer {
+  background-color: rgba(26, 26, 26, 0.9);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  display: flex;
+  flex-wrap: wrap; /* Flex wrap untuk responsif */
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Heading in Footer */
+footer h3 {
+  color: orange;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid orange;
+  text-align: left;
+  font-size: 1rem;
+  width: 200px;
+}
+
+/* Address Section */
+footer .address {
+  text-align: left;
+  margin: 1rem 0 0 4rem;
+  flex: 1 1 300px; /* Memberikan flex supaya bisa menyesuaikan dengan ukuran layar */
+}
+
+footer .address a {
+  display: flex;
+  margin-bottom: 1rem;
+  color: white;
+  gap: 1rem;
+  transition: 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+footer .address p {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+/* Ukuran Ikon di Address */
+footer .address a i {
+  font-size: 1.4rem; /* Ukuran ikon lebih besar agar lebih terlihat jelas */
+  color: white;
+}
+
+/* Credit Section */
+footer .credit {
+  font-size: 0.8rem;
+  color: white;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+/* Social Media Links */
+footer .socials,
+footer .links {
+  margin-left: 6rem;
+  padding: 1rem 0;
+  flex: 1 1 200px;
+  text-align: left;
+}
+
+footer .socials a,
+footer .links a {
+  color: white;
+  margin: 5px;
+  transition: color 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+/* Ukuran Ikon di Socials */
+footer .socials a i {
+  font-size: 1.6rem; /* Ukuran ikon sosial media sedikit lebih besar */
+  margin-right: 10px; /* Menambahkan jarak antar ikon sosial */
+}
+
+/* Links Section */
+footer .links {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Hover Effects */
+footer a:hover,
+footer a i:hover,
+footer .credit:hover {
+  color: #00d4ff;
+}
+
+/* Styling untuk subscribe form */
+footer .socials .subscribe-container {
+  margin-top: 1.5rem; /* Memberikan jarak antara ikon sosial media dan form */
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .email-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 150px; /* Lebar input email */
+  border: 2px solid #ccc;
+  border-radius: 0.6rem;
+  outline: none;
+}
+
+footer .email-input:focus {
+  border-color: #00d4ff; /* Warna border saat fokus */
+}
+
+footer .subscribe-btn {
+  padding: 0.6rem 0.5rem;
+  font-size: 1rem;
+  background-color: #ff0040;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+footer .subscribe-btn:hover {
+  background-color: #cc0040; /* Warna tombol saat hover */
+}
