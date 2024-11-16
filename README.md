@@ -1,8 +1,6 @@
 # **Judul: Game ON! - Website Rental PlayStation**
 
-```
 Platform online untuk menyewa PlayStation. Dan juga menjual kaset ps 4 dan 5.
-```
 
 ## **Anggota Kelompok 1**
 | NPM          | Nama                                                        |
@@ -12,7 +10,8 @@ Platform online untuk menyewa PlayStation. Dan juga menjual kaset ps 4 dan 5.
 | 202243500501 | [Abdur Rosyid Fachriansyah](https://github.com/dellwatch21) |
 | 202243500502 | [Sangga Buana](https://github.com/sanggabuana453)           |
 | 202243500505 | [Taufik Ramadhan](https://github.com/Alfarobby27)           |  
-| 202243579068 | [Agus Setiawan](https://github.com/Alfarobby27)            |
+| 202243579068 | [Agus Setiawan](https://github.com/Alfarobby27)             |
+| 202243500498 | [Khoirizidan NUr Bisri](https://github.com/Alfarobby27)     |
 
 ## **Fitur Menu:**
 - Home: Halaman utama website sebagai informasi utama seperti tentang website, keunggulan, testimonial customer, dan sponsors. 
@@ -42,6 +41,7 @@ Platform online untuk menyewa PlayStation. Dan juga menjual kaset ps 4 dan 5.
 - Jenis Font: Arial, Helvetica, sans-serif
 
 ## **Struktur Folder**
+![Struktur Folder](./gameon-flow.jpeg)
 
 ## **Demo Website**
 
