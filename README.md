@@ -15,7 +15,7 @@ Platform online untuk menyewa PlayStation. Dan juga menjual kaset ps 4 dan 5.
 
 ## **Fitur Menu:**
 - Home: Halaman utama website sebagai informasi utama seperti tentang website, keunggulan, testimonial customer, dan sponsors. 
-- Games: Halaman untuk membeli kaset ps dan acessories ps. 
+- Games: Halaman untuk membeli kaset ps 4 dan 5.
 - Sewa: Halaman untuk menyewa ps. 
 - Contact: Halaman kontak pesan rental ps.
 
