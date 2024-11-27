@@ -45,6 +45,4 @@ Platform online untuk menyewa PlayStation. Dan juga menjual kaset ps 4 dan 5.
 
 ## **Demo Website**
 
-```bash
-https://alfarobby27.github.io/game-on/
-```
+[https://alfarobby27.github.io/game-on/](https://alfarobby27.github.io/game-on/)
